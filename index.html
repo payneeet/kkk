@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Handcrafted keepsakes capturing the tiny hands of babies and beloved paws of pets.">
+    <title>Little Prints Casting Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef9f3;
+        }
+        header {
+            background-color: #ffdab9;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #3a3a3a;
+        }
+        header p {
+            margin: 10px 0 0;
+            color: #3a3a3a;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffe4c4;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3a3a3a;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff7f50;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .services, .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .services h2, .contact h2 {
+            font-size: 2rem;
+            color: #3a3a3a;
+        }
+        .services p, .contact p {
+            margin-top: 20px;
+            color: #6a6a6a;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        .booking {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .booking h2 {
+            font-size: 2rem;
+            color: #3a3a3a;
+        }
+        .booking p {
+            margin-top: 20px;
+            color: #6a6a6a;
+        }
+        .booking form {
+            margin-top: 20px;
+        }
+        .booking form input, .booking form select, .booking form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 400px;
+        }
+        .booking form button {
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .booking form button:hover {
+            background-color: #ff5722;
+        }
+        footer {
+            background-color: #ffdab9;
+            padding: 20px;
+            text-align: center;
+            color: #3a3a3a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Little Prints Casting Studio</h1>
+        <p>Capturing tiny hands, beloved paws, and cherished memories forever.</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Book Now</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section class="hero">
+        <h2>Timeless Keepsakes</h2>
+        <p>Immortalize the love and beauty of your little ones and furry friends.</p>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <p>We specialize in hand casting for babies and paw casting for pets. Each piece is delicately crafted to preserve the intricate details of your loved ones.</p>
+        <h3>Bundles & Packages</h3>
+        <ul>
+            <li><strong>Baby Hand Casting Package:</strong> Includes a single hand cast with a decorative frame. $100</li>
+            <li><strong>Pet Paw Casting Bundle:</strong> Includes a paw cast with a custom nameplate. $80</li>
+            <li><strong>Family Keepsake Package:</strong> Includes casts for up to 4 family members. $250</li>
+        </ul>
+    </section>
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div>
+            <img src="baby-hand.jpg" alt="Baby Hand Casting">
+            <img src="pet-paw.jpg" alt="Pet Paw Casting">
+            <img src="family-moment.jpg" alt="Family Hand Casting">
+        </div>
+    </section>
+    <section class="booking" id="booking">
+        <h2>Book an Appointment</h2>
+        <p>Schedule your session to create a lasting memory today!</p>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="package">Select Package:</label><br>
+            <select id="package" name="package">
+                <option value="baby-hand">Baby Hand Casting Package</option>
+                <option value="pet-paw">Pet Paw Casting Bundle</option>
+                <option value="family-keepsake">Family Keepsake Package</option>
+            </select><br>
+
+            <label for="date">Preferred Date:</label><br>
+            <input type="date" id="date" name="date" required><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to create your keepsake? Reach out to us!</p>
+        <p>Email: contact@littleprintsstudio.com | Phone: (123) 456-7890</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Little Prints Casting Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
